@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth or Dare - Online Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Truth or Dare</h1>
+            <p>Play Online with Friends!</p>
+        </header>
+        <div class="game-section">
+            <div class="player-info">
+                <input type="text" id="playerName" placeholder="Enter your name" maxlength="20">
+                <button onclick="setPlayer()">Set Player</button>
+                <p id="currentPlayer">Player: Anonymous</p>
+            </div>
+            <div class="question-display">
+                <div id="questionBox" class="question-box">
+                    <p>Click Truth or Dare to get started!</p>
+                </div>
+            </div>
+            <div class="button-group">
+                <button class="btn truth-btn" onclick="getTruth()">Truth</button>
+                <button class="btn dare-btn" onclick="getDare()">Dare</button>
+            </div>
+            <div class="online-features">
+                <h3>Online-Only Features:</h3>
+                <button class="feature-btn" onclick="getChallenge()">Online Challenge</button>
+                <button class="feature-btn" onclick="getVirtualDare()">Virtual Dare</button>
+                <button class="feature-btn" onclick="getScreenChallenge()">Screen Challenge</button>
+            </div>
+            <div class="stats">
+                <p>Questions Asked: <span id="counter">0</span></p>
+                <button onclick="resetGame()">Reset Game</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
